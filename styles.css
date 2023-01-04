@@ -53,8 +53,8 @@ body {
 }
 
 .img-left {
-  left: 420px;
-  top: 200px;
+  right: 200px;
+  top: 150px;
   border-bottom: 1px solid #252525;
 }
 
