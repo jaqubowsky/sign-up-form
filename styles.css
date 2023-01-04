@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #252525;
+}
+
+/* BACKGROUND */
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.left,
+.right {
+  width: 50vh;
+  width: 100%;
+  height: 50vh;
+  height: 100%;
+}
+
+.left {
+  background-color: #ecbc76;
+}
+
+.right {
+  background-color: whitesmoke;
+}
+
+.shadow {
+  box-shadow: 0 5px 5px #808080;
+}
+
+/* IMG */
+
+.img-left,
+.img-right {
+  position: relative;
+}
+
+.img-left {
+  left: 420px;
+  top: 200px;
+  border-bottom: 1px solid #252525;
+}
+
+.img-right {
+  left: 200px;
+  top: 150px;
+}
+
+/* CENTER FORM */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 550px;
+  height: 800px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* TITLE */
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 432px;
+}
+
+.title-span {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.break {
+  display: block;
+}
+
+.subtitle {
+  position: relative;
+  margin: 0 0 auto auto;
+}
+
+.subtitle-link {
+  text-decoration: none;
+  color: rgba(228, 135, 0, 1);
+}
+
+.subtitle-link:hover {
+  color: rgba(228, 135, 0, 0.8);
+}
+
+/* INPUT */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  gap: 30px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #808080;
+}
+
+.pass-forgot {
+  display: inline-block;
+  color: #808080;
+  font-style: italic;
+}
+
+@keyframes shake3 {
+  0% {
+    left: -5px;
+  }
+  16% {
+    left: 5px;
+  }
+  33% {
+    left: -5px;
+  }
+  49% {
+    left: 5px;
+  }
+  66% {
+    left: -5px;
+  }
+  80% {
+    left: 5px;
+  }
+  100% {
+    left: 0;
+  }
+} /* And @keyframes with prefixes */
+
+.validate input:invalid {
+  border: 2px solid red;
+  animation-name: shake3;
+  animation-duration: 0.4s;
+  position: relative;
+}
+
+input:focus {
+  outline: inherit;
+}
+
+.valid input:valid {
+  border: 2px solid green;
+  position: relative;
+}
+
+/* BUTTON */
+
+.btn {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(228, 135, 0, 0.6);
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(228, 135, 0, 0.8);
+}
+
+.btn:active {
+  background-color: rgba(228, 135, 0, 1);
+}
+
+/* INVALID SPAN */
+
+.invalid {
+  color: red;
+  font-size: 0.8rem;
+}
